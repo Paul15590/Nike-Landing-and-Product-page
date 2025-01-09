@@ -15,7 +15,7 @@ import { useState } from "react";
      setIsMobileNavVisible(!isMobileNavVisible);
    }
     return(
-      <header className="padding-x py-8 z-10 w-full absolute">
+      <header className="padding-x py-8 z-10 w-full ">
          <nav className="flex justify-between items-center max-container">
             <a href="/">
                 <img src={headerLogo} alt="Logo" />
