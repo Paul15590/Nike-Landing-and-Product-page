@@ -7,6 +7,7 @@ import iconMenu from "../assets/icons/menu-dots-circle-svgrepo-com.svg"
 import iconContactUs from "../assets/icons/social-contact-svgrepo-com.svg"
 import iconProducts from "../assets/icons/products-product-svgrepo-com.svg";
 import { useState } from "react";
+import { motion } from "framer-motion";
 
  const Nav = () => {
    const [isMobileNavVisible, setIsMobileNavVisible] = useState(false);
@@ -25,7 +26,7 @@ import { useState } from "react";
                {navLinks.map((items) => {
                   return(
                   <li key={items.label}>
-                     <a href={items.href} className="font-montserrat leading-normal text-lg text-slate-gray">{items.label}</a>
+                     <a  animate={{color:"red"}} href={items.href} className="font-montserrat leading-normal text-lg text-slate-gray">{items.label}</a>
                   </li>
                   )
                })}
